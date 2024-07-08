@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: lightyellow;
 }
 
 .header, .navbar, .auth-buttons, .footer-content {
@@ -42,11 +43,22 @@ header{
 .auth-buttons button{
     margin-left: 10px;
     width: 11vw;
+    
 
+}
+.authh{
+	background-color: lightgrey;
+    border-color:grey;
+    border-radius: 10px;
+    color: grey;
+}
+.authh:hover{
+	background-color: white;
+	color: grey;
 }
 
 nav {
-    background-color: #4CAF50;
+    background-color: black;
     padding: 10px;
 }
 
@@ -80,8 +92,14 @@ nav a {
     padding: 10px;
     text-align: center;
     width: 200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 6px lightgrey;
    
+}
+
+
+.book:hover{
+	background-color: lightgrey;
+	color: black;
 }
 
 .book img {
@@ -125,13 +143,20 @@ footer a {
 	justify-content: center;
 	align-items: center;
 }
-.innerblock{
+
+.innerblock {
 	border: 2px solid lightgrey;
-	height:14vh;
+	height: 14vh;
 	width: 19vw;
 	text-align: center;
 	display: inline-block;
+	box-shadow:4px 7px #a7a7a7;
 }
+.innerblock:hover{
+	background-color: lightgrey;
+	color: black;
+}
+
 .ig{
 	margin-right: 12rem;
 }
@@ -151,7 +176,20 @@ footer a {
 	font-family:  monospace;
 
 }
-
+.but{
+	width: 15rem;
+	height: 4rem;
+	background-color: white;
+	border-color: red;
+	font-size: 25px;
+	font-weight: 100;
+	color: red;
+	border-radius: 15px;	
+}
+.but:hover{
+	background-color: red;
+	color: white;
+}
 
 footer {
   background-color: black;

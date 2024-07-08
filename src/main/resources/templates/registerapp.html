@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 
 <head>
 	<meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
 	<title>Insert title here</title>
 	<style>
 		* {
-			margin:0%;
+			margin: 0%;
 			padding: 0%;
 			height: 100%;
 		}
 
-		form{
+		form {
 			border: 2px solid none;
 			position: relative;
 			left: 27%;
 			width: 35vw;
-			height:90vh;
+			height: 90vh;
 			display: grid;
 			align-content: center;
 			align-items: center;
@@ -32,15 +32,17 @@
 			top: 0rem;
 			margin-left: 3rem;
 		}
-		#box{
+
+		#box {
 			gap: 2rem;
 			margin: 1.4rem;
 			height: 4vh;
 			width: 17vw;
 		}
-		table{
+
+		table {
 			display: grid;
-			margin:5rem;
+			margin: 5rem;
 			margin-bottom: -.5rem;
 		}
 
@@ -49,12 +51,14 @@
 			border-radius: 6px;
 			height: 20px;
 		}
-		#register{
-			height:98vh;
+
+		#register {
+			height: 98vh;
 			width: 99vw;
 			filter: blur(2px);
 		}
-		#frm{
+
+		#frm {
 			position: relative;
 			bottom: 35rem;
 			border-radius: 10px;
@@ -67,16 +71,16 @@
 <body>
 	<img id="register" src="" th:src="@{/images/register.png}" alt=""></img>
 	<form th:action="@{/register}" method="post" id="frm" th:object="${customer}">
-		
+
 		<h1 id="Register">Registration Form</h1>
-		
+
 		<table>
 			<tr>
 				<td>
 					<h2>Id</h2>
 				</td>
 				<td>
-					<input id="box" type="text"placeholder="Id" name="id">
+					<input id="box" type="text" placeholder="Id" name="id">
 				</td>
 			</tr>
 
@@ -85,7 +89,7 @@
 				<td>
 					<h2>Name</h2>
 				</td>
-				<td><input id="box" type="text" placeholder="Name" name="name" ></td>
+				<td><input id="box" type="text" placeholder="Name" name="name"></td>
 			</tr>
 
 			<tr>
@@ -105,7 +109,7 @@
 				<td>
 					<h2>Mobile</h2>
 				</td>
-				<td><input id="box" type="text" placeholder="Mobile Number" name="mobile" ></td>
+				<td><input id="box" type="text" placeholder="Mobile Number" name="mobile"></td>
 			</tr>
 
 			<tr class="card-footer">

@@ -20,7 +20,6 @@ public class Customer {
 	}
 
 	public Customer(String id, String name, String email, String password, Integer mobile) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
