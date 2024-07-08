@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="header">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book Shopping Application</title>
+	<!-- Add your header content here -->
+	<link rel="stylesheet" href="" th:href="@{/css/style.css}">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<!-- Navigation menu -->
+
+			<div class="navbar">
+				<div class="logo">
+					<h1>BOOKS</h1>
+				</div>
+
+				<div style="margin-left: 50rem;" class="auth-buttons">
+					<a th:href="@{http://localhost:7777/login}"><button
+							style="background-color: limegreen;">Login</button></a>
+					<a th:href="@{http://localhost:7777/index}"><button
+							style="background-color: limegreen;">Cart</button></a>
+				</div>
+			</div>
+			<nav style=" height: 5vh; font-size: 20px;">
+				<a href="#">Home</a>
+				<a href="#">Buy Books</a>
+				<a href="#">Setting</a>
+				<a href="#">Contact Us</a>
+			</nav>
+
+		</nav>
+	</header>
+</body>
+
+</html>
