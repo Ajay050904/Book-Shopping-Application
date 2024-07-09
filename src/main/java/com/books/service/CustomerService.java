@@ -11,7 +11,9 @@ public interface CustomerService {
 
 	public Customer putCustomer(Customer customer);
 
-	public Customer getCustomerById(String id);
+	public Customer getCustomerById(Long id);
 
-	public void deleteCustomerById(String id);
+	public Customer findByEmailAndPassword(String email, String password);
+
+	public void deleteCustomerById(Long id);
 }

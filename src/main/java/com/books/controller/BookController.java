@@ -21,8 +21,6 @@ import com.books.service.BookService;
 public class BookController {
 
 	@Autowired
-	private BookRepository bookRepository;
-	@Autowired
 	private BookService bookService;
 
 	@GetMapping("/home")
@@ -32,7 +30,7 @@ public class BookController {
 	}
 
 	@GetMapping("/books")
-	public String getBooks(Model model) {
+	public String getBooks(@ModelAttribute Book book, Model model) {
 		List<Book> books = bookService.getAllBooks();
 		model.addAttribute("books", books);
 		return "books";

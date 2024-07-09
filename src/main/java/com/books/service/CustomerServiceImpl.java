@@ -18,7 +18,7 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 
 	@Override
-	public Customer getCustomerById(String id) {
+	public Customer getCustomerById(Long id) {
 		return customerRepository.findById(id).orElse(null);
 	}
 
@@ -33,9 +33,15 @@ public class CustomerServiceImpl implements CustomerService {
 		customerRepository.save(customer);
 		return customer;
 	}
+	
+	@Override
+	public Customer findByEmailAndPassword(String email, String password) {
+		Customer c1=new Customer();
+		return c1;
+	}
 
 	@Override
-	public void deleteCustomerById(String id) {
+	public void deleteCustomerById(Long id) {
 		Customer entity = customerRepository.getOne(id);
 		customerRepository.delete(entity);
 	}

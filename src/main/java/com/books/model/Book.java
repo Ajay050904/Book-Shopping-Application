@@ -27,7 +27,6 @@ public class Book {
 
 	public Book(Long id, String title, String author, String description, String language, int pages, double price,
 			String photoUrl, String publisher, String firstPubDate) {
-		super();
 		this.id = id;
 		this.title = title;
 		this.author = author;

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.books.model.Customer;
 
 @Repository
-public interface CustomerRepository extends CrudRepository<Customer, String> {
+public interface CustomerRepository extends CrudRepository<Customer, Long> {
 	Customer findByEmail(String email);
-	Customer getOne(String id);
+	Customer getOne(Long id);
 }

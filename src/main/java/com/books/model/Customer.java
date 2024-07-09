@@ -9,7 +9,8 @@ import jakarta.persistence.Id;
 public class Customer {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private String id;
+	//@Column(name = "customer_id")
+	private Long id;
 	private String name;
 	private String email;
 	private String password;
@@ -19,7 +20,7 @@ public class Customer {
 		System.out.println("Customer class 0 param constructor");
 	}
 
-	public Customer(String id, String name, String email, String password, Integer mobile) {
+	public Customer(Long id, String name, String email, String password, Integer mobile) {
 		this.id = id;
 		this.name = name;
 		this.email = email;
@@ -27,11 +28,11 @@ public class Customer {
 		this.mobile = mobile;
 	}
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

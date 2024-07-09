@@ -9,7 +9,7 @@
 
 <body>
 	<form class="back" action="#" th:action="@{/login}" th:object="${customer}" method="post">
-	</form>
+		</form>
 	<div class="form">
 		<nav class="nav">
 			<p style="position: relative; top: 1rem;">India's Largest Online Shoping Book Store</p>
@@ -41,6 +41,7 @@
 			<label for="submit">
 				<input class="btn submit-btn " type="submit" name="submit" value="Sign In">
 			</label>
+			
 			<h4 style="color: red; margin-left: 8rem; margin-top: -.9rem;"><a
 					th:href="@{http://localhost:7777/registeration}">New to Bookswagon?Sign up</a></h4>
 			<h4 class="footer">By continuing, I agree to the terms of the <a
